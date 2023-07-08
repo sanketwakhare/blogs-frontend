@@ -1,7 +1,9 @@
+import TestComponents from "./components/TestComponents";
+
 const App = () => {
   return (
     <div >
-      Blogs Home Page
+      <TestComponents />
     </div>
   );
 }
