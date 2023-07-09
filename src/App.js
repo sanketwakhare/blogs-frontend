@@ -1,11 +1,11 @@
-import TestComponents from "./components/TestComponents";
+import ComponentsStories from "./stories/Components.stories";
 
 const App = () => {
   return (
-    <div >
-      <TestComponents />
+    <div>
+      <ComponentsStories />
     </div>
   );
-}
+};
 
 export default App;

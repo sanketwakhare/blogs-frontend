@@ -1,22 +1,29 @@
 .navbar-container {
+  background-color: #007bff;
+}
 
-    // TODO: fix order
-    .nav-link {
-        cursor: pointer;
-        color: black;
-        font-size: 1.2rem;
-        font-weight: 500;
-        padding: 0.5rem 1rem;
-        text-decoration: none;
-        transition: all 0.3s ease-in-out;
+.nav-link {
+  all: unset;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
 
-        &:hover {
-            color: #007bff;
-            text-decoration: none;
-        }
+  &:hover {
+    color: darkblue;
+    text-decoration: none;
+  }
+}
 
-        // &:visited {
-        //     color: green;
-        // }
-    }
+.nav-secondary {
+  background-color: whitesmoke;
+  color: #0069d9;
+
+  &:hover {
+    color: darkblue;
+    text-decoration: none;
+  }
 }
