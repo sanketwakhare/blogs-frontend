@@ -6,24 +6,23 @@
   all: unset;
   cursor: pointer;
   color: #fff;
-  font-size: 1.2rem;
   font-weight: 500;
   padding: 0.5rem 1rem;
   text-decoration: none;
   transition: all 0.1s ease-in-out;
 
   &:hover {
-    color: darkblue;
+    color: orangered;
     text-decoration: none;
   }
 }
 
 .nav-secondary {
-  background-color: whitesmoke;
+  background-color: lightgrey;
   color: #0069d9;
 
   &:hover {
-    color: darkblue;
+    color: orangered;
     text-decoration: none;
   }
 }

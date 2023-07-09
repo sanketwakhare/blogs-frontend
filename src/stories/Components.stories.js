@@ -1,7 +1,9 @@
 import React from "react";
 import ButtonStories from "../components/ui/button/Button.stories";
-import TextFieldStories from "../components/ui/text-field/TextField.stories";
+import ModalStories from "../components/ui/modal/Modal.stories";
 import NavBarStories from "../components/ui/navbar/NavBar.stories";
+import TextFieldStories from "../components/ui/text-field/TextField.stories";
+import ModalContainer from "../components/ui/modal/ModalContainer.stories";
 
 const ComponentsStories = () => {
   return (
@@ -13,6 +15,11 @@ const ComponentsStories = () => {
       <hr />
       <NavBarStories />
       <hr />
+      <div>
+        <h4>Modals</h4>
+        <ModalStories />
+        <ModalContainer />
+      </div>
     </div>
   );
 };
