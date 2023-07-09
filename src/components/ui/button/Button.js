@@ -5,7 +5,7 @@ const Button = (props) => {
   const { children, variant, className, ...rest } = props;
 
   const btnVariant = variant || "primary";
-  const btnClasses = `btn btn-${btnVariant} ${className}`;
+  const btnClasses = `btn btn-${btnVariant} ${className ? className : ""}`;
 
   return (
     <button className={btnClasses} {...rest}>

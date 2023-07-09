@@ -2,7 +2,8 @@
   all: unset;
   cursor: pointer;
   padding: 5px 10px;
-  border-radius: 3px !important;
+  border-radius: 3px;
+  width: fit-content;
 }
 
 .btn-primary {
