@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from './ui/button/Button'
 import TextField from './ui/text-field/TextField';
+import NavBar from './ui/navbar/NavBar';
 
 const TestComponents = () => {
 
@@ -14,6 +15,28 @@ const TestComponents = () => {
             {/* TextField */}
             <TextField className="m10 custom" placeholder="Search"></TextField>
             <TextField className="m10 custom" value="disabled button" disabled></TextField>
+            {/* NavBar */}
+            <NavBar
+                className="background-red"
+                links={[
+                    {
+                        label: 'Link1',
+                        to: '/link1',
+                        className: 'green'
+                    },
+                    {
+                        label: 'Link2',
+                        to: '/link2',
+                    },
+                    {
+                        label: 'Link3',
+                        to: '/link3',
+                    },
+                    {
+                        label: 'Link4',
+                        to: '/link4',
+                    }
+                ]} />
         </div>
     )
 }
