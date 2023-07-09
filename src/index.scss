@@ -1,48 +1,23 @@
+@import "./styles/colors";
+@import "./styles/flex";
+@import "./styles/spacings";
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
-.flex {
-    display: flex;
+hr {
+  clear: both;
+  border: none;
+  display: block;
+  background-color: lightgrey;
+  height: 1px;
+  width: 100%;
 }
 
-.flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex-row {
-    flex-direction: row;
-}
-
-.flex-column {
-    flex-direction: column;
-}
-
-.p10 {
-    padding: 10px;
-}
-
-.m10 {
-    margin: 10px;
-}
-
-.custom {
-    width: 20rem;
-}
-
-.green {
-    color: green;
-}
-
-.red {
-    color: red;
-}
-
-.background-red {
-    background-color: red;
+h4 {
+  margin: 0;
 }

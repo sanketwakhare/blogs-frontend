@@ -1,13 +1,12 @@
-import React from 'react';
-import './TextField.scss';
+import React from "react";
+import "./TextField.scss";
 
 const TextField = (props) => {
+  let { className, ...rest } = props;
 
-    let { className, ...rest } = props;
+  let txtFieldClasses = `text-field ${className}`;
 
-    let txtFieldClasses = `text-field ${className}`;
+  return <input className={txtFieldClasses} {...rest}></input>;
+};
 
-    return <input className={txtFieldClasses} {...rest}></input >;
-}
-
-export default TextField
+export default TextField;

@@ -1,29 +1,28 @@
 .btn {
-    all: unset;
-    cursor: pointer;
-    padding: 5px 10px;
-    border-radius: 3px !important;
+  all: unset;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 3px !important;
 }
 
 .btn-primary {
-    background-color: #007bff;
-    color: #fff;
-    border: 1px solid #007bff;
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
 
-    &:hover {
-        background-color: #0069d9;
-        color: #fff;
-    }
+  &:hover {
+    background-color: #0069d9;
+    color: #fff;
+  }
 }
 
 .btn-secondary {
-    background-color: #f6f6f9;
+  background-color: #f6f6f9;
+  color: #0069d9;
+  border: 1px solid #007bff;
+
+  &:hover {
+    background-color: #fff;
     color: #0069d9;
-    border: 1px solid #007bff;
-
-
-    &:hover {
-        background-color: #fff;
-        color: #0069d9;
-    }
+  }
 }
