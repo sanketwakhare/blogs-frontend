@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.p10 {
+    padding: 10px;
+}
+
+.m10 {
+    margin: 10px;
+}
+
+.custom {
+    width: 20rem;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.background-red {
+    background-color: red;
+}
