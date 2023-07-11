@@ -1,13 +1,16 @@
 @import "./styles/colors";
 @import "./styles/flex";
 @import "./styles/spacings";
+@import "./styles/themes";
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primary-font);
   font-size: 16px;
   box-sizing: border-box;
+  background-color: var(--theme-background);
+  color: var(--theme-text);
 }
 
 hr {
