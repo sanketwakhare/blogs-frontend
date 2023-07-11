@@ -1,0 +1,110 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  width: 600px;
+  height: 200px;
+  row-gap: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .card-header {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+
+    .card-header-author {
+      display: flex;
+      column-gap: 10px;
+      align-items: center;
+      justify-content: center;
+
+      .card-header-author__image {
+        background-color: lightgray;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background-image: url("https://picsum.photos/30/30");
+        cursor: pointer;
+      }
+
+      .card-header-author__name {
+        cursor: pointer;
+      }
+    }
+
+    .card-header__date {
+      display: flex;
+      justify-self: flex-start;
+      cursor: pointer;
+    }
+  }
+
+  .card-body {
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    justify-content: space-between;
+
+    .card-body__container {
+      width: 492px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      .card-body__title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .card-body__contents {
+        margin-top: 10px;
+        width: 100%;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        cursor: pointer;
+        font-size: 14px;
+      }
+    }
+
+    .card-body__image-container {
+      width: 108px;
+      background-image: url(https://picsum.photos/id/8/100/100);
+      background-size: cover;
+      background-position: center;
+      cursor: pointer;
+    }
+  }
+
+  .card-footer {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+
+    .chips-container {
+      display: flex;
+      column-gap: 10px;
+      .chip {
+        background-color: lightgray;
+        padding: 5px 10px;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+    }
+  }
+}
