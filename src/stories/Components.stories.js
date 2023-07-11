@@ -4,6 +4,7 @@ import ModalStories from "../components/ui/modal/Modal.stories";
 import NavBarStories from "../components/ui/navbar/NavBar.stories";
 import TextFieldStories from "../components/ui/text-field/TextField.stories";
 import ModalContainer from "../components/ui/modal/ModalContainer.stories";
+import CardStories from "../components/ui/card/Card.stories";
 
 const ComponentsStories = () => {
   return (
@@ -20,6 +21,8 @@ const ComponentsStories = () => {
         <ModalStories />
         <ModalContainer />
       </div>
+      <hr />
+      <CardStories />
     </div>
   );
 };

@@ -1,0 +1,49 @@
+$--primary-font: "Roboto", sans-serif;
+$--secondary-font: "Poppins", sans-serif;
+
+$--theme-text: --theme-text;
+$--theme-background: --theme-background;
+
+$--theme-btn-primary-bg: --theme-btn-primary-bg;
+$--theme-btn-primary-text: --theme-btn-primary-text;
+$--theme-btn-primary-hover-bg: --theme-btn-primary-hover-bg;
+$--theme-btn-primary-hover-text: --theme-btn-primary-hover-text;
+
+$--theme-btn-secondary-bg: --theme-btn-secondary-bg;
+$--theme-btn-secondary-text: --theme-btn-secondary-text;
+$--theme-btn-secondary-hover-bg: --theme-btn-secondary-hover-bg;
+$--theme-btn-secondary-hover-text: --theme-btn-secondary-hover-text;
+
+// TODO: implement light and dark theme wherever required
+// Default theme
+$theme-map-light: (
+  --primary-font: $--primary-font,
+  --theme-text: #333333,
+  --theme-background: white,
+
+  --primary-color: #013975,
+  --secondary-color: white,
+  --tertiary-color: #011e3c,
+
+  --success-color: #28a745,
+  --error-color: #dc3545,
+  --warning-color: #ffc107,
+  --info-color: #17a2b8,
+
+  --primary-link-color: #007bff,
+  --secondary-link-color: #6c757d,
+  --tertiary-link-color: #6c757d,
+
+  --border-color: #dee2e6,
+);
+
+// Override the default light theme
+$theme-map-dark: (
+  --primary-font: $--primary-font,
+  --theme-text: whitesmoke,
+  --theme-background: #333333,
+  --theme-btn-primary-bg: #07284b,
+  --theme-btn-primary-text: white,
+  --theme-btn-primary-hover-bg: #013975,
+  --theme-btn-primary-hover-text: whitesmoke,
+);
