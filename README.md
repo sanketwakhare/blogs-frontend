@@ -12,10 +12,15 @@ The Blogs App - frontend app based on react
     - Modal with container elements
     - Modal with modal options as props
 
+## In Progress
+
+- Card for displaying Article Summary
+  - card configurations - done
+  - add click handlers - pending
+
 ## TODOs
 
 - React Components
-  - Card for displaying Article Summary
   - Card for displaying detailed Article
   - Article Text Editor
   - Comment Editor

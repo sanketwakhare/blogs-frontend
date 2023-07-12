@@ -1,12 +1,8 @@
 import React from "react";
 import "./ArticleSummaryCard.scss";
 
-// TODO: refactor this component
-// make this generic
-// add props to Card - e.g. cardOptions
-// width, height etc.
+// TODO: add click handlers
 
-// TODO: rename Card to ArticleSummaryCard
 const ArticleSummaryCard = ({ cardOptions: { author, article } }) => {
   // const { cardOptions: author, article } = props.cardOptions;
 
