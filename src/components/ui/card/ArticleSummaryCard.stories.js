@@ -4,6 +4,7 @@ import ArticleSummaryCard from "./ArticleSummaryCard";
 const ArticleSummaryCardStories = () => {
   const cardOptions = {
     author: {
+      id: 1,
       imageUrl: "https://picsum.photos/30/30",
       name: "Sanket Wakhare",
     },

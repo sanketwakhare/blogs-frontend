@@ -10,17 +10,16 @@ const ArticleSummaryCard = ({ cardOptions: { author, article } }) => {
   return (
     <div className="card-container">
       <div className="card-header">
-        <div className="card-header-author">
+        <Link to={`/author/${author.id}`} className="card-header-author">
           <img
             className="card-header-author__image"
             src={author.imageUrl}
             alt="author"
           ></img>
           <div className="card-header-author__name">{author.name}</div>
-        </div>
+        </Link>
         <div className="card-header__date">{article.creationDate}</div>
       </div>
-      {/* <div className="card-body"> */}
       <Link to={`/article/${article.id}`} className="card-body">
         <div className="card-body__container">
           <div className="card-body__title">{article.title}</div>
@@ -32,7 +31,6 @@ const ArticleSummaryCard = ({ cardOptions: { author, article } }) => {
           alt="article"
         ></img>
       </Link>
-      {/* </div> */}
       <div className="card-footer">
         <div className="chips-container">
           {article.tags.map((tag) => {
