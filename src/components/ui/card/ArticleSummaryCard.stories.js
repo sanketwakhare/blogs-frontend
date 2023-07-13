@@ -8,6 +8,7 @@ const ArticleSummaryCardStories = () => {
       name: "Sanket Wakhare",
     },
     article: {
+      id: 1,
       title: "Mastering React: A Comprehensive Guide for Beginners",
       description:
         "React has gained immense popularity in the web development world, and for good reason. It is a powerful JavaScript library for building user interfaces, known for its efficiency, reusability, and declarative syntax. In this comprehensive guide, we will walk you through the fundamental concepts of React and help you gain a strong foundation in using this library to create amazing web applications.",
