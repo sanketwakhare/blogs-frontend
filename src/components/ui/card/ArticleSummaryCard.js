@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 // TODO: add click handlers
 
-const ArticleSummaryCard = ({ cardOptions: { author, article } }) => {
+const ArticleSummaryCard = ({ cardOptions, article }) => {
   // const { cardOptions: author, article } = props.cardOptions;
-
+  const { author } = article;
   return (
     <div className="card-container">
       <div className="card-header">
