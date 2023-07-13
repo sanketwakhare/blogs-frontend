@@ -11,25 +11,24 @@ The Blogs App - frontend app based on react
   - Modals
     - Modal with container elements
     - Modal with modal options as props
+  - Card for displaying Article Summary
 
 ## In Progress
-
-- Card for displaying Article Summary
-  - card configurations - done
-  - add click handlers - pending
 
 ## TODOs
 
 - React Components
   - Card for displaying detailed Article
+  - Author Details
+  - Sign Up Component
+  - Sign In Component
   - Article Text Editor
   - Comment Editor
   - Comment Display Component
   - Like Button Component
-  - Sign Up Component
-  - Sign In Component
 
 ## Issues
 
-1. Fix order of navigation link custom class
+1. Fix order of navigation link custom class - DONE
 2. Fix page refresh on click on navigation link
+3. Fix link scss @extend issue
