@@ -1,10 +1,10 @@
 import React from "react";
-import ButtonStories from "../components/ui/button/Button.stories";
-import ArticleSummaryCardStories from "../components/ui/card/ArticleSummaryCard.stories";
-import ModalStories from "../components/ui/modal/Modal.stories";
-import ModalContainer from "../components/ui/modal/ModalContainer.stories";
-import NavBarStories from "../components/ui/navbar/NavBar.stories";
-import TextFieldStories from "../components/ui/text-field/TextField.stories";
+import ButtonStories from "src/components/ui/button/Button.stories";
+import ModalStories from "src/components/ui/modal/Modal.stories";
+import ModalContainer from "src/components/ui/modal/ModalContainer.stories";
+import NavBarStories from "src/components/ui/navbar/NavBar.stories";
+import TextFieldStories from "src/components/ui/text-field/TextField.stories";
+import ArticleSummaryCardStories from "src/components/article/article-summary/ArticleSummaryCard.stories";
 
 const ComponentsStories = () => {
   return (
