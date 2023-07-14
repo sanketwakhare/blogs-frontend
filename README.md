@@ -31,4 +31,4 @@ The Blogs App - frontend app based on react
 
 1. Fix order of navigation link custom class - DONE
 2. Fix page refresh on click on navigation link
-3. Fix link scss @extend issue
+3. Fix link scss @extend issue - DONE

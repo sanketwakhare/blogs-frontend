@@ -25,3 +25,13 @@ hr {
 h4 {
   margin: 0;
 }
+
+.router-link {
+  text-decoration: none;
+  color: var(--theme-text);
+}
+
+@mixin router-link2 {
+  text-decoration: none;
+  color: var(--theme-text);
+}

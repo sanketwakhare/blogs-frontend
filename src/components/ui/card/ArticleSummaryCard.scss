@@ -1,8 +1,10 @@
 // common router link style
-%router-link {
-  text-decoration: none;
-  color: var(--theme-text);
-}
+// %router-link {
+//   text-decoration: none;
+//   color: var(--theme-text);
+// }
+
+@import "/src/index.scss";
 
 .card-container {
   display: flex;
@@ -28,7 +30,8 @@
     font-size: 14px;
 
     .card-header-author {
-      @extend %router-link;
+      // @extend %router-link;
+      @extend .router-link;
       display: flex;
       column-gap: 10px;
       align-items: center;
@@ -55,7 +58,7 @@
   }
 
   .card-body {
-    @extend %router-link;
+    @include router-link2();
     height: 60%;
     display: flex;
     flex-direction: row;
