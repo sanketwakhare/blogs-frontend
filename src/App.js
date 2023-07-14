@@ -1,4 +1,4 @@
-import ArticleDetails from "./components/article/ArticleDetails";
+import ArticleDetails from "./components/article/article-details/ArticleDetails";
 import AuthorDetails from "./components/author/AuthorDetails";
 import ComponentsStories from "./stories/Components.stories";
 import { Route, Routes } from "react-router-dom";
