@@ -34,6 +34,13 @@ $theme-map-light: (
   // border
   --border-color: #dee2e6,
 
+  // disabled
+  --disabled-bg-color: #c5c5c7,
+  --disabled-text-color: #919191,
+
+  // placeholder
+  --placeholder-color: #ccc,
+
   // toast
   --toast-info-color: #3182ce,
   --toast-info-bg-color: #bee3f8,
@@ -76,6 +83,13 @@ $theme-map-dark: (
 
   // border
   --border-color: #4b4b4b,
+
+  // disabled
+  --disabled-bg-color: #c5c5c7,
+  --disabled-text-color: #919191,
+
+  // placeholder
+  --placeholder-color: #717171,
 
   // toast
   --toast-info-color: #3182ce,
