@@ -7,6 +7,7 @@ import TextFieldStories from "src/components/ui/text-field/TextField.stories";
 import ArticleSummaryCardStories from "src/components/article/article-summary/ArticleSummaryCard.stories";
 import ArticleDetailsStories from "src/components/article/article-details/ArticleDetails.stories";
 import ChipsStories from "src/components/ui/chip/Chips.stories";
+import ToastStories from "src/components/ui/toast/Toast.stories";
 
 const ComponentsStories = () => {
   return (
@@ -25,6 +26,8 @@ const ComponentsStories = () => {
       </div>
       <hr />
       <ChipsStories />
+      <hr />
+      <ToastStories />
       <hr />
       <ArticleSummaryCardStories />
       <hr />
