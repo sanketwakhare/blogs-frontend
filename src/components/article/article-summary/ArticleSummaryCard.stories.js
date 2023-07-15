@@ -42,6 +42,7 @@ const ArticleSummaryCardStories = () => {
           cardOptions={cardOptions}
           article={article}
           key={article.id}
+          className="m10"
         />
       ))}
     </div>

@@ -5,7 +5,7 @@ const ArticleDetailsStories = () => {
   return (
     <div>
       <h4>Article Details Card</h4>
-      <ArticleDetails articleId={1} />
+      <ArticleDetails articleId={1} className="m10" />
     </div>
   );
 };

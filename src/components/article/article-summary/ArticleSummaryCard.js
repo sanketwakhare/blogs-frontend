@@ -1,14 +1,18 @@
 import React from "react";
 import "./ArticleSummaryCard.scss";
 import { Link } from "react-router-dom";
+import Chips from "src/components/ui/chip/Chips";
 
 // TODO: add click handlers
 
-const ArticleSummaryCard = ({ cardOptions, article }) => {
+const ArticleSummaryCard = ({ cardOptions, article, className }) => {
   // const { cardOptions: author, article } = props.cardOptions;
   const { author } = article;
+
+  const cardContainerClasses = `card-container ${className ? className : ""}`;
+
   return (
-    <div className="card-container">
+    <div className={cardContainerClasses}>
       <div className="card-header">
         <Link to={`/author/${author.id}`} className="card-header-author">
           <img
@@ -32,11 +36,7 @@ const ArticleSummaryCard = ({ cardOptions, article }) => {
         ></img>
       </Link>
       <div className="card-footer">
-        <div className="chips-container">
-          {article.tags.map((tag) => {
-            return <div className="chip">{tag}</div>;
-          })}
-        </div>
+        <Chips tags={article.tags} />
       </div>
     </div>
   );
