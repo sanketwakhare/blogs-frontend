@@ -1,5 +1,6 @@
 import React from "react";
 import "./NavBar.scss";
+import { Link } from 'react-router-dom';
 
 const NavBar = (props) => {
   const { navOptions, className, ...rest } = props;
@@ -10,15 +11,9 @@ const NavBar = (props) => {
     const navClasses = `nav-link flex p10 ${link.className}`;
     const navId = link.id ? link.id : link.label.toLowerCase();
     return (
-      <a
-        key={navId}
-        className={navClasses}
-        href={link.to}
-        // TODO: fix this
-        // onClick={(event) => { event.preventDefault() }}
-      >
+      <Link key={navId} className={navClasses} to={link.to}>
         {link.label}
-      </a>
+      </Link>
     );
   });
 

@@ -1,3 +1,11 @@
+// common router link style
+// %router-link {
+//   text-decoration: none;
+//   color: var(--theme-text);
+// }
+
+@import "/src/index.scss";
+
 .card-container {
   display: flex;
   flex-direction: column;
@@ -22,6 +30,8 @@
     font-size: 14px;
 
     .card-header-author {
+      // @extend %router-link;
+      @extend .router-link;
       display: flex;
       column-gap: 10px;
       align-items: center;
@@ -32,7 +42,6 @@
         border-radius: 50%;
         width: 30px;
         height: 30px;
-        // background-image: url("https://picsum.photos/30/30");
         cursor: pointer;
       }
 
@@ -44,11 +53,11 @@
     .card-header__date {
       display: flex;
       justify-self: flex-start;
-      cursor: pointer;
     }
   }
 
   .card-body {
+    @include router-link2();
     height: 60%;
     display: flex;
     flex-direction: row;
@@ -77,9 +86,6 @@
     }
 
     .card-body__image-container {
-      // width: 108px;
-      // width: 18%;
-      // background-image: url(https://picsum.photos/id/8/100/100);
       background-size: cover;
       background-position: center;
       cursor: pointer;

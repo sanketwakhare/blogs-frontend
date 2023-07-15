@@ -1,0 +1,77 @@
+.article-details-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  padding: 2em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px #ccc;
+  min-width: 15em;
+
+  .article-title {
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .author-details-container {
+    display: flex;
+    column-gap: 1em;
+
+    .author-image {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .author-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .author-meta {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 1em;
+
+        .author-name {
+          display: flex;
+          align-items: center;
+        }
+        .btn-author-follow {
+          padding: 0;
+        }
+      }
+
+      .article-meta {
+        display: flex;
+        column-gap: 1em;
+
+        .article-created-at {
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+
+  .article-actions {
+    display: flex;
+    align-items: center;
+    column-gap: 2em;
+    min-height: 3em;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0 1em;
+
+    .article-action {
+      cursor: pointer;
+    }
+
+    .btn-article-like {
+      padding: 0;
+    }
+  }
+
+  .article-body {
+    line-height: 2em;
+  }
+}
