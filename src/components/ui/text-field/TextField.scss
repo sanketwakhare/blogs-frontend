@@ -26,3 +26,12 @@
         cursor: not-allowed;
     }
 }
+
+button.btn-password-field {
+  position: relative;
+  right: 2.6rem;
+
+  i {
+    width: 1.2rem;
+  }
+}
