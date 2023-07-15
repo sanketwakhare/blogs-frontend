@@ -6,4 +6,4 @@ const AuthorDetails = () => {
     )
 }
 
-export default AuthorDetails
+export default AuthorDetails;
