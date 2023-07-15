@@ -15,10 +15,12 @@ The Blogs App - frontend app based on react
 
 ## In Progress
 
+- Card for displaying detailed Article
+  - add APIs
+
 ## TODOs
 
 - React Components
-  - Card for displaying detailed Article
   - Author Details
   - Sign Up Component
   - Sign In Component
