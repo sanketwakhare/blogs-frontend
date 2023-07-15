@@ -5,7 +5,7 @@ import { Link, useParams } from "react-router-dom";
 
 const ArticleDetails = (props) => {
 
-  let { articleId } = props;
+  let { articleId, className } = props;
   const params = useParams();
   if (!articleId) {
     articleId = params.articleId;
@@ -79,7 +79,9 @@ const ArticleDetails = (props) => {
     console.log(`follow user ${authorId}`);
   };
 
-  const articleContainer = article && <div className="article-details-container">
+  const articleDetailsContainerClasses = `article-details-container ${className ? className : ''}`;
+
+  const articleContainer = article && <div className={articleDetailsContainerClasses}>
     <div className="article-title">{article.title}</div>
     <div className="author-details-container">
       <Link to={`/author/${author.id}`} className="router-link">

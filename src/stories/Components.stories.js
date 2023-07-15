@@ -6,6 +6,7 @@ import NavBarStories from "src/components/ui/navbar/NavBar.stories";
 import TextFieldStories from "src/components/ui/text-field/TextField.stories";
 import ArticleSummaryCardStories from "src/components/article/article-summary/ArticleSummaryCard.stories";
 import ArticleDetailsStories from "src/components/article/article-details/ArticleDetails.stories";
+import ChipsStories from "src/components/ui/chip/Chips.stories";
 
 const ComponentsStories = () => {
   return (
@@ -22,6 +23,8 @@ const ComponentsStories = () => {
         <ModalStories />
         <ModalContainer />
       </div>
+      <hr />
+      <ChipsStories />
       <hr />
       <ArticleSummaryCardStories />
       <hr />
