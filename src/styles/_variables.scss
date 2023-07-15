@@ -50,6 +50,9 @@ $theme-map-light: (
   --toast-error-bg-color: #fed7d7,
   --toast-success-color: #38a169,
   --toast-success-bg-color: #c6f6d5,
+
+  // chips
+  --chip-bg-color: #d3d3d3,
 );
 
 // Override the default light theme
@@ -100,4 +103,7 @@ $theme-map-dark: (
   --toast-error-bg-color: #fed7d7,
   --toast-success-color: #38a169,
   --toast-success-bg-color: #c6f6d5,
+
+  // chips
+  --chip-bg-color: #5a5a5a,
 );
