@@ -8,6 +8,8 @@ The Blogs App - frontend app based on react
   - Button
   - TextField
   - NavBar
+  - Chips
+  - Toast
   - Modals
     - Modal with container elements
     - Modal with modal options as props
