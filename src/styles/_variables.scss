@@ -6,23 +6,35 @@ $--secondary-font: "Poppins", sans-serif;
 $theme-map-light: (
   --primary-font: $--primary-font,
   --theme-text: #333333,
-  --theme-background: white,
+  --theme-background: #ffffff,
 
   --primary-color: #013975,
-  --secondary-color: white,
-  --tertiary-color: #011e3c,
+  --secondary-color: #ffffff,
 
+  // buttons
+  --btn-primary-bg: var(--primary-color),
+  --btn-primary-text: var(--secondary-color),
+  --btn-primary-hover-bg: #012852,
+  --btn-primary-hover-text: var(--secondary-color),
+  --btn-secondary-bg: transparent,
+  --btn-secondary-text: var(--primary-color),
+  --btn-secondary-hover-bg: #d2d2d2,
+  --btn-secondary-hover-text: var(--primary-color),
+  // colors
   --success-color: #28a745,
   --error-color: #dc3545,
   --warning-color: #ffc107,
   --info-color: #007bff,
 
+  // links
   --primary-link-color: #007bff,
   --secondary-link-color: #6c757d,
   --tertiary-link-color: #6c757d,
 
+  // border
   --border-color: #dee2e6,
 
+  // toast
   --toast-info-color: #3182ce,
   --toast-info-bg-color: #bee3f8,
   --toast-warning-color: #dd6b20,
@@ -36,29 +48,36 @@ $theme-map-light: (
 // Override the default light theme
 $theme-map-dark: (
   --primary-font: $--primary-font,
-  --theme-text: whitesmoke,
+  --theme-text: #f5f5f5,
   --theme-background: #333333,
-  --theme-btn-primary-bg: #07284b,
 
-  --theme-btn-primary-text: white,
-  --theme-btn-primary-hover-bg: #013975,
-  --theme-btn-primary-hover-text: whitesmoke,
-
-  --primary-color: whitesmoke,
+  --primary-color: #f5f5f5,
   --secondary-color: #013975,
-  --tertiary-color: #011e3c,
 
+  // buttons
+  --btn-primary-bg: var(--primary-color),
+  --btn-primary-text: var(--secondary-color),
+  --btn-primary-hover-bg: #e0e0e0,
+  --btn-primary-hover-text: var(--secondary-color),
+  --btn-secondary-bg: transparent,
+  --btn-secondary-text: var(--primary-color),
+  --btn-secondary-hover-bg: #013975,
+  --btn-secondary-hover-text: #ffffff,
+  // colors
   --success-color: #28a745,
   --error-color: #dc3545,
   --warning-color: #ffc107,
   --info-color: #007bff,
 
+  // links
   --primary-link-color: #007bff,
   --secondary-link-color: #6c757d,
   --tertiary-link-color: #6c757d,
 
+  // border
   --border-color: #4b4b4b,
 
+  // toast
   --toast-info-color: #3182ce,
   --toast-info-bg-color: #bee3f8,
   --toast-warning-color: #dd6b20,
