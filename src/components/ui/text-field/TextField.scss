@@ -27,6 +27,12 @@
   }
 }
 
+.password-field-container {
+  .text-field {
+    margin-right: 0;
+  }
+}
+
 button.btn-password-field {
   position: relative;
   right: 2.6rem;
