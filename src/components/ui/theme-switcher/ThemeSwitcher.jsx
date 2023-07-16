@@ -40,4 +40,4 @@ const ThemeSwitcher = (props) => {
     )
 }
 
-export default ThemeSwitcher
+export default ThemeSwitcher;
