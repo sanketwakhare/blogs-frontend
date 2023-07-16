@@ -1,0 +1,11 @@
+.nav-layout-container {
+  height: calc(100vh - 6rem);
+  .nav-layout {
+    flex: 2;
+    background-color: var(--nav-link-bg-color);
+  }
+
+  .nav-body {
+    flex: 10;
+  }
+}
