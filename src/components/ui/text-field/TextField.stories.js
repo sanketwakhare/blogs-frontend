@@ -12,7 +12,7 @@ const TextFieldStories = () => {
         disabled
       ></TextField>
       <TextField
-        className="w300"
+        className="m10 w300"
         placeholder="Password"
         type="password"
         passwordField="true"

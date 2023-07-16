@@ -16,7 +16,7 @@
     background-color: var(--nav-link-hover-bg-color);
   }
 
-  &:active {
+  &.active {
     color: var(--nav-link-hover-text-color);
     background-color: var(--nav-link-hover-bg-color);
   }

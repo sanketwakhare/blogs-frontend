@@ -9,6 +9,7 @@ const ThemeTypes = {
 
 const ThemeSwitcher = (props) => {
 
+    // TODO: set this theme state in localstorage or global state
     const { LIGHT, DARK } = ThemeTypes;
 
     const { initialTheme = LIGHT, className, ...rest } = props;

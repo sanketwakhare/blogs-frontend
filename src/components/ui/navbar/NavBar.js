@@ -1,11 +1,11 @@
 import React from "react";
 import "./NavBar.scss";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const NavBar = (props) => {
   const { navOptions, className, ...rest } = props;
 
-  const navBarClasses = `navbar-container flex m10 ${className}`;
+  const navBarClasses = `navbar-container flex ${className}`;
 
   const navLinks = navOptions.map((link) => {
     const navClasses = `nav-link flex p10 ${link.className}`;

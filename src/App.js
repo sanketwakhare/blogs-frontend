@@ -1,14 +1,16 @@
-import ArticleDetails from "./components/article/article-details/ArticleDetails";
-import AuthorDetails from "./components/author/AuthorDetails";
-import ComponentsStories from "./stories/Components.stories";
 import { Route, Routes } from "react-router-dom";
+import ArticleDetails from "./features/article/article-details/ArticleDetails";
+import AuthorDetails from "./features/author/AuthorDetails";
+import HomeLayout from "./features/home/HomeLayout";
+import ComponentRoutes from "./routes/ComponentRoutes";
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<ComponentsStories />}></Route>
-      <Route path="/article/:articleId" element={<ArticleDetails />}></Route>
-      <Route path="/author/:authorId" element={<AuthorDetails />}></Route>
-      <Route path="/component-library" element={<ComponentsStories />}></Route>
+      <Route path="/" element={<HomeLayout />}>
+        <Route path="article/:articleId" element={<ArticleDetails />}></Route>
+        <Route path="author/:authorId" element={<AuthorDetails />}></Route>
+        <Route path="components/*" element={<ComponentRoutes />}></Route>
+      </Route>
     </Routes>
   );
 };
