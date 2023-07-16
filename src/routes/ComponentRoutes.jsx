@@ -10,7 +10,7 @@ import NavBarStories from 'src/components/ui/navbar/NavBar.stories';
 import TextFieldStories from 'src/components/ui/text-field/TextField.stories';
 import ThemeSwitcherStories from 'src/components/ui/theme-switcher/ThemeSwitcher.stories';
 import ToastStories from 'src/components/ui/toast/Toast.stories';
-import ComponentsLayout from 'src/stories/ComponentsLayout';
+import ComponentsLayout from 'src/components/ComponentsLayout';
 
 const ComponentRoutes = () => {
     return (
