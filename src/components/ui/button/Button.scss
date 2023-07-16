@@ -7,23 +7,21 @@
 }
 
 .btn-primary {
-  background-color: #007bff;
-  color: #fff;
-  // border: 1px solid #007bff;
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
 
   &:hover {
-    background-color: #0069d9;
-    color: #fff;
+    background-color: var(--btn-primary-hover-bg);
+    color: var(--btn-primary-hover-text);
   }
 }
 
 .btn-secondary {
-  background-color: #fff;
-  color: #007bff;
-  // border: 1px solid #007bff;
+  background-color: var(--btn-secondary-bg);
+  color: var(--btn-secondary-text);
 
   &:hover {
-    // background-color: #ededed;
-    color: #0069d9;
+    background-color: var(--btn-secondary-hover-bg);
+    color: var(--btn-secondary-hover-text);
   }
 }
