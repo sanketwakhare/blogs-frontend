@@ -1,28 +1,34 @@
 .navbar-container {
-  background-color: #007bff;
+  background-color: var(--nav-link-bg-color);
 }
 
 .nav-link {
   all: unset;
   cursor: pointer;
-  color: #fff;
+  color: var(--nav-link-text-color);
   font-weight: 500;
   padding: 0.5rem 1rem;
   text-decoration: none;
   transition: all 0.1s ease-in-out;
 
   &:hover {
-    color: orangered;
-    text-decoration: none;
+    color: var(--nav-link-hover-text-color);
+    background-color: var(--nav-link-hover-bg-color);
+  }
+
+  &:active {
+    color: var(--nav-link-hover-text-color);
+    background-color: var(--nav-link-hover-bg-color);
   }
 }
 
-.nav-secondary {
-  background-color: lightgrey;
-  color: #0069d9;
+.nav-custom {
+  background-color: gray;
+  color: white;
 
   &:hover {
-    color: orangered;
+    color: #013975;
+    background-color: lightgray;
     text-decoration: none;
   }
 }

@@ -11,10 +11,22 @@ $theme-map-light: (
   --primary-color: #013975,
   --secondary-color: #ffffff,
 
+  // border
+  --border-color: #dee2e6,
+
+  // disabled
+  --disabled-bg-color: #c5c5c7,
+  --disabled-text-color: #919191,
+
+  // placeholder
+  --placeholder-color: #ccc,
+
+  // backdrop
+  --backdrop-bg-color: rgba(0, 0, 0, 0.75),
   // buttons
   --btn-primary-bg: var(--primary-color),
   --btn-primary-text: var(--secondary-color),
-  --btn-primary-hover-bg: #012852,
+  --btn-primary-hover-bg: #0855a7,
   --btn-primary-hover-text: var(--secondary-color),
   --btn-secondary-bg: transparent,
   --btn-secondary-text: var(--primary-color),
@@ -27,19 +39,10 @@ $theme-map-light: (
   --info-color: #007bff,
 
   // links
-  --primary-link-color: #007bff,
-  --secondary-link-color: #6c757d,
-  --tertiary-link-color: #6c757d,
-
-  // border
-  --border-color: #dee2e6,
-
-  // disabled
-  --disabled-bg-color: #c5c5c7,
-  --disabled-text-color: #919191,
-
-  // placeholder
-  --placeholder-color: #ccc,
+  --nav-link-bg-color: var(--primary-color),
+  --nav-link-text-color: var(--secondary-color),
+  --nav-link-hover-bg-color: #0855a7,
+  --nav-link-hover-text-color: #ffffff,
 
   // toast
   --toast-info-color: #3182ce,
@@ -64,26 +67,6 @@ $theme-map-dark: (
   --primary-color: #f5f5f5,
   --secondary-color: #013975,
 
-  // buttons
-  --btn-primary-bg: var(--primary-color),
-  --btn-primary-text: var(--secondary-color),
-  --btn-primary-hover-bg: #e0e0e0,
-  --btn-primary-hover-text: var(--secondary-color),
-  --btn-secondary-bg: transparent,
-  --btn-secondary-text: var(--primary-color),
-  --btn-secondary-hover-bg: #013975,
-  --btn-secondary-hover-text: #ffffff,
-  // colors
-  --success-color: #28a745,
-  --error-color: #dc3545,
-  --warning-color: #ffc107,
-  --info-color: #007bff,
-
-  // links
-  --primary-link-color: #007bff,
-  --secondary-link-color: #6c757d,
-  --tertiary-link-color: #6c757d,
-
   // border
   --border-color: #4b4b4b,
 
@@ -93,6 +76,29 @@ $theme-map-dark: (
 
   // placeholder
   --placeholder-color: #717171,
+
+  // backdrop
+  --backdrop-bg-color: rgba(255, 255, 255, 0.75),
+  // buttons
+  --btn-primary-bg: var(--primary-color),
+  --btn-primary-text: var(--secondary-color),
+  --btn-primary-hover-bg: #e0e0e0,
+  --btn-primary-hover-text: var(--secondary-color),
+  --btn-secondary-bg: transparent,
+  --btn-secondary-text: var(--primary-color),
+  --btn-secondary-hover-bg: #0855a7,
+  --btn-secondary-hover-text: #ffffff,
+  // colors
+  --success-color: #28a745,
+  --error-color: #dc3545,
+  --warning-color: #ffc107,
+  --info-color: #007bff,
+
+  // links
+  --nav-link-bg-color: var(--primary-color),
+  --nav-link-text-color: var(--secondary-color),
+  --nav-link-hover-bg-color: #0855a7,
+  --nav-link-hover-text-color: #ffffff,
 
   // toast
   --toast-info-color: #3182ce,

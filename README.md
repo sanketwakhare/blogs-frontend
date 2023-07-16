@@ -10,6 +10,7 @@ The Blogs App - frontend app based on react
   - NavBar
   - Chips
   - Toast
+  - Theme Switcher
   - Modals
     - Modal with container elements
     - Modal with modal options as props

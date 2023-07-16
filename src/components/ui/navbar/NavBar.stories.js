@@ -9,28 +9,28 @@ const NavBarStories = () => {
         navOptions={[
           {
             label: "Link1",
-            to: "/link1",
+            to: "/",
           },
           {
             label: "Link2",
-            to: "/link2",
+            to: "/",
           },
           {
             label: "Link3",
-            to: "/link3",
+            to: "/",
           },
           {
-            label: "custom styled link",
-            to: "/link4",
-            className: "nav-secondary",
+            label: "Link 4",
+            to: "/",
           },
           {
             label: "Link 5",
-            to: "/link5",
+            to: "/",
           },
           {
-            label: "Link 6",
-            to: "/link6",
+            label: "Custom Styled Link",
+            to: "/",
+            className: "nav-custom",
           },
         ]}
       />
