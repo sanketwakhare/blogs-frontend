@@ -1,4 +1,3 @@
-import React from 'react'
 import { Outlet } from 'react-router-dom';
 import './HomeLayout.scss';
 import HeaderLayout from '../header/HeaderLayout';
