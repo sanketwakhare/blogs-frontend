@@ -5,6 +5,7 @@ The Blogs App - frontend app based on react
 ## Done
 
 - React Components
+
   - Button
   - TextField
   - NavBar
@@ -16,6 +17,10 @@ The Blogs App - frontend app based on react
     - Modal with modal options as props
   - Card for displaying Article Summary
 
+- App Routing
+  - Components
+  - Home
+
 ## In Progress
 
 - Card for displaying detailed Article
@@ -24,6 +29,7 @@ The Blogs App - frontend app based on react
 ## TODOs
 
 - React Components
+
   - Author Details
   - Sign Up Component
   - Sign In Component
@@ -32,8 +38,11 @@ The Blogs App - frontend app based on react
   - Comment Display Component
   - Like Button Component
 
+- Navigation should be fixed at top. Content should be scrollable
+
 ## Issues
 
 1. Fix order of navigation link custom class - DONE
 2. Fix page refresh on click on navigation link - DONE by using react-router-link
 3. Fix link scss @extend issue - DONE
+4. Theme state should be present globally [localstorage or redux?]
