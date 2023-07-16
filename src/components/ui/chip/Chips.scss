@@ -3,9 +3,8 @@
   column-gap: 10px;
   .chip {
     background-color: var(--chip-bg-color);
-    padding: 5px 10px;
-    border-radius: 50px;
+    padding: 0.5em 0.5em;
+    border-radius: 5em;
     cursor: pointer;
-    font-size: 14px;
   }
 }
