@@ -13,14 +13,6 @@ const HeaderLayout = () => {
                         label: "Components",
                         to: "components",
                     },
-                    {
-                        label: "SignUp",
-                        to: "",
-                    },
-                    {
-                        label: "Search Articles",
-                        to: "",
-                    },
                 ]} />
         </div>
     )
