@@ -9,27 +9,27 @@ const NavBarStories = () => {
         navOptions={[
           {
             label: "Link1",
-            to: "/",
+            to: "",
           },
           {
             label: "Link2",
-            to: "/",
+            to: "",
           },
           {
             label: "Link3",
-            to: "/",
+            to: "",
           },
           {
             label: "Link 4",
-            to: "/",
+            to: "",
           },
           {
             label: "Link 5",
-            to: "/",
+            to: "",
           },
           {
             label: "Custom Styled Link",
-            to: "/",
+            to: "",
             className: "nav-custom",
           },
         ]}
