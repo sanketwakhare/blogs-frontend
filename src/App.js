@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-import ArticleDetails from "./components/article/article-details/ArticleDetails";
-import AuthorDetails from "./components/author/AuthorDetails";
+import ArticleDetails from "./features/article/article-details/ArticleDetails";
+import AuthorDetails from "./features/author/AuthorDetails";
 import HomeLayout from "./features/home/HomeLayout";
 import ComponentRoutes from "./routes/ComponentRoutes";
 const App = () => {

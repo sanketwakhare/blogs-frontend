@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom';
-import ArticleDetailsStories from 'src/components/article/article-details/ArticleDetails.stories';
-import ArticleSummaryCardStories from 'src/components/article/article-summary/ArticleSummaryCard.stories';
+import ArticleDetailsStories from 'src/features/article/article-details/ArticleDetails.stories';
+import ArticleSummaryCardStories from 'src/features/article/article-summary/ArticleSummaryCard.stories';
 import ButtonStories from 'src/components/ui/button/Button.stories';
 import ChipsStories from 'src/components/ui/chip/Chips.stories';
 import ModalStories from 'src/components/ui/modal/Modal.stories';
