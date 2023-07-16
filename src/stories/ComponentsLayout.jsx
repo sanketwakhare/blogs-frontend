@@ -34,8 +34,8 @@ const ComponentsLayout = () => {
               to: "toasts",
             },
             {
-              label: "Theme Switcher",
-              to: "theme-switcher",
+              label: "Theme",
+              to: "theme",
             },
             {
               label: "Article Summary",

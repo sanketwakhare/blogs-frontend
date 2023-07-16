@@ -32,7 +32,7 @@ const ComponentRoutes = () => {
                 <Route path="chips" element={<ChipsStories />}></Route>
                 <Route path="toasts" element={<ToastStories />}></Route>
                 <Route
-                    path="theme-switcher"
+                    path="theme"
                     element={<ThemeSwitcherStories />}
                 ></Route>
                 <Route
