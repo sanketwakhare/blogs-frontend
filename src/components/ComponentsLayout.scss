@@ -1,11 +1,7 @@
 .nav-layout-container {
   height: calc(100vh - 4rem);
   .nav-layout {
-    width: 20rem;
+    min-width: 20rem;
     background-color: var(--nav-link-bg-color);
-  }
-
-  .nav-body {
-    flex: 10;
   }
 }

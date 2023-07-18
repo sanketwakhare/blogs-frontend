@@ -46,3 +46,4 @@ The Blogs App - frontend app based on react
 2. Fix page refresh on click on navigation link - DONE by using react-router-link
 3. Fix link scss @extend issue - DONE
 4. Theme state should be present globally [localstorage or redux?]
+5. Handle Errors from APIs and show corresponding error screens
