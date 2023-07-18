@@ -10,7 +10,11 @@ const ArticleDetailsStories = () => {
       try {
         const response = await fetch("http://localhost:8823/articles");
         const articlesData = await response.json();
-        setArticle(articlesData?.articles[0]);
+        setArticle(
+          articlesData?.articles[
+            Math.floor(Math.random() * articlesData?.articles.length)
+          ]
+        );
       } catch (error) {
         console.log(error);
       }
