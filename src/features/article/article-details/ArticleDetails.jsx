@@ -14,55 +14,18 @@ const ArticleDetails = (props) => {
   const [author, setAuthor] = useState(null);
 
   useEffect(() => {
-    // TODO: call api to fetch article details by article id/slug
-    const descriptionTemplate = (
-      <>
-        <h4>Introduction:</h4>
-        The vast and mysterious depths of the world's oceans have always
-        captivated the imagination of scientists and adventurers alike. The deep
-        sea, which encompasses more than 90% of Earth's habitable space, remains
-        largely unexplored, holding countless secrets and untold wonders. In this
-        article, we embark on a thrilling journey to uncover the extraordinary
-        life forms that thrive in the abyssal depths, shedding light on the beauty
-        and resilience of nature's hidden treasures.
-        <h4>The Abyssal Realms::</h4>
-        Descending into the depths, one enters a realm of eternal darkness and
-        crushing pressure, where temperatures drop to near-freezing levels. It is
-        a place that few species can call home, yet those that do have evolved
-        remarkable adaptations to survive in these extreme conditions. Here, amid
-        the perpetual twilight, we encounter astonishing creatures that defy
-        imagination.
-        <h4>Bioluminescent Marvels:</h4>
-        One of the most enchanting features of the deep sea is the abundance of
-        bioluminescent organisms. These mesmerizing creatures emit their own
-        light, creating a breathtaking display of colors and patterns.
-        Bioluminescence serves various purposes, from attracting prey to finding
-        mates or deterring predators. The glow of deep-sea anglerfish, for
-        instance, lures unsuspecting prey, while the sparkling trails of
-        bioluminescent plankton illuminate the darkness, resembling a starry night
-        sky.
-      </>
-    );
-
-    const article = {
-      author: {
-        id: 1,
-        imageUrl: "https://picsum.photos/30/30",
-        name: "Sanket Wakhare",
-      },
-      id: articleId,
-      title:
-        "Exploring the Wonders of Deep Sea Life: Unveiling Nature's Hidden Treasures",
-      description: descriptionTemplate,
-      creationDate: "July 23",
-      imageUrl: "https://picsum.photos/id/8/100/100",
-      tags: ["React", "JavaScript"],
+    const fetchArticle = async () => {
+      try {
+        const response = await fetch(`http://localhost:8823/articles/${articleId}`);
+        const articleData = await response.json();
+        setArticle(articleData);
+        setAuthor(articleData.authors[0]);
+      } catch (error) {
+        console.log(error);
+      }
     };
-
-    setArticle(article);
-    setAuthor(article.author);
-
-  }, [articleId]);
+    fetchArticle();
+  }, [articleId, author]);
 
   const handleLikeArticleBtnClick = (articleId) => {
     // TODO: implement this function
@@ -81,18 +44,18 @@ const ArticleDetails = (props) => {
 
   const articleDetailsContainerClasses = `article-details-container ${className ? className : ''}`;
 
-  const articleContainer = article && <div className={articleDetailsContainerClasses}>
+  const articleContainer = article && author && <div className={articleDetailsContainerClasses}>
     <div className="article-title">{article.title}</div>
     <div className="author-details-container">
-      <Link to={`/author/${author.id}`} className="router-link">
-        <img src={author.imageUrl} alt="" className="author-image" />
+      <Link to={`/author/${author.username}`} className="router-link">
+        <img src={author.imageUrl ? author.imageUrl : "https://picsum.photos/30/30"} alt="" className="author-image" />
       </Link>
       <div className="author-details">
         <div className="author-meta">
-          <Link to={`/author/${author.id}`} className="router-link">
-            <div className="author-name">{author.name}</div>
+          <Link to={`/author/${author.username}`} className="router-link">
+            <div className="author-name">{author.username}</div>
           </Link>
-          <Button className="btn-author-follow" variant="secondary" onClick={() => handleFollowBtnClick(author.id)}>Follow</Button>
+          <Button className="btn-author-follow" variant="secondary" onClick={() => handleFollowBtnClick(author.username)}>Follow</Button>
         </div>
         <div className="article-meta">
           <div className="article-created-at">{article.creationDate}</div>
@@ -100,7 +63,7 @@ const ArticleDetails = (props) => {
       </div>
     </div>
     <div className="article-body">
-      {article.description}
+      {article.body}
     </div>
     <div className="article-actions">
       <div className="article-action btn-action-like" onClick={() => handleLikeArticleBtnClick(article.id)}>
