@@ -25,7 +25,7 @@ const ArticleDetails = (props) => {
       }
     };
     fetchArticle();
-  }, [articleId, author]);
+  }, [articleId]);
 
   const handleLikeArticleBtnClick = (articleId) => {
     // TODO: implement this function
